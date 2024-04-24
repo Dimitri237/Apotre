@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+body,
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+.header,
+.about
+{
+  height: 100vh;
+}
+
+.about,
+.services,
+footer {
+  margin-top: 200px !important;
+}
+.header {
+  background-image: url("https://i.pinimg.com/originals/be/77/c5/be77c57fa1f731fe83675d803441f2fc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin: auto;
+}
+.header::before {
+    content: "";
+    top: 14%;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 91.5%;
+    background:linear-gradient(rgba(26, 25, 25, 0.267), rgba(0, 0, 0, 0.514))
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  height: 120px;
+  margin-top: 2%;
+  margin-bottom: -1%;
+}
+
+nav {
+  text-align: center;
+  width: 31%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+header .nom{
+    margin-top: 10px;
+    font-size: 40px;
+}
+nav a {
+  margin-top: 25px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.863);
+  padding: 0;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.active {
+    color: orange;
+}
+
+nav a:hover {
+    color: rgb(255, 153, 0);
+}
+.baniere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.baniere h2 {
+  font-size: 5em;
+  color: white;
+  z-index: 200;
+}
+.baniere p {
+  font-size: 1.8em;
+  color: rgb(238, 255, 0);
+  z-index: 200;
+  padding: 20px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.about img {
+  border-radius: 6px;
+  height: 100%;
+}
+.about div {
+  padding: 2%;
+  height: 86%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.about p {
+  text-align: justify;
+  /* font-size: 1.8em; */
+  font-size: 120%;
+}
+
+.services {
+  background-color: rgba(26, 25, 25, 0.856);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.services h1 {
+  font-size: 3em;
+}
+.services p {
+  font-size: x-large;
+  text-align: center;
+  margin-top: -1%;
+}
+.container {
+  width: 100%;
+  display: block;
+}
+.cont {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  padding: 0 20px;
+  margin: auto;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+}
+.cont a {
+  margin-left: 10px;
+  background-color: rgb(255, 153, 0);
+  font-size: 25px;
+  color: white;
+  padding: 10px 90px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.cont a:hover {
+  background-color: white;
+  color: rgb(255, 153, 0);
+  transform: scale(1.5);
+}
+aside {
+  width: 25%;
+  height: 300px;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid white;
+  margin: 2%;
+}
+.c1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: all 0.3s;
+  height: 300px;
+  margin-top: -19px;
+  opacity: 0;
+  display: block;
+}
+.c1:hover {
+  opacity: 15;
+}
+
+.aside1 {
+  background-image: url("https://ceramica.fr/files/marbre-blanc_b171a4f1ab8ce519f0d230d65a0deb3d.jpeg");
+}
+.aside2 {
+  background-image: url("../images/carrelage3.jpg");
+}
+.aside3 {
+  background-image: url("https://maestrochalet.fr/uploads/wp_content_fr/2020/01/15_salon_design_maison_bois.jpg");
+}
+.aside4 {
+  background-image: url("../images/induit3.jpg");
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  font-size: 1.5em;
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  margin: auto;
+}
